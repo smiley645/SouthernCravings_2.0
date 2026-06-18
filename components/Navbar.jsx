@@ -188,7 +188,7 @@ export default function Navbar({ showHome = false }) {
                   onClick={() => setShowLoginModal(true)}
                 >
                   <span className="d-none d-md-inline">{t('login')}</span>
-                  <span className="d-inline d-md-none" style={{ fontSize: '1.2rem' }} title={t('login')}>👤</span>
+                  <span className="d-inline d-md-none" style={{ fontSize: '1rem' }} title={t('login')}>👤</span>
                 </a>
               )}
 

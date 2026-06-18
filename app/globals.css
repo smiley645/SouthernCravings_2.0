@@ -1032,19 +1032,31 @@
 
   .navbar-container-custom #logo {
     order: 1;
-    font-size: 1.25rem !important;
+    font-size: 1.15rem !important;
     margin-right: 0 !important;
   }
 
   .navbar-container-custom .navbar-nav-items {
     order: 2;
-    gap: 8px !important;
+    gap: 6px !important;
   }
 
   .navbar-container-custom .navbar-nav-items button,
-  .navbar-container-custom .navbar-nav-items a {
-    padding: 6px 10px !important;
-    font-size: 0.9rem !important;
+  .navbar-container-custom .navbar-nav-items a,
+  .navbar-container-custom .navbar-nav-items .user-menu-btn {
+    padding: 5px 8px !important;
+    font-size: 0.8rem !important;
+    min-height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-container-custom .navbar-nav-items .cart-badge {
+    width: 16px !important;
+    height: 16px !important;
+    font-size: 0.65rem !important;
+    margin-left: 2px !important;
   }
 
   .navbar-container-custom form {
