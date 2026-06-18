@@ -152,7 +152,7 @@ export default function Navbar({ showHome = false }) {
             {/* Navigation Items */}
             <div className="d-flex align-items-center gap-3 flex-shrink-0 navbar-nav-items">
               {showHome && (
-                <Link href="/" style={{ textDecoration: 'none', color: 'white' }}>{t('home')}</Link>
+                <Link href="/" style={{ textDecoration: 'none', color: 'white' }} className="d-none d-md-inline">{t('home')}</Link>
               )}
 
               {/* Language Toggle */}
@@ -171,7 +171,7 @@ export default function Navbar({ showHome = false }) {
                     className="user-menu-btn"
                     onClick={() => setShowUserMenu(!showUserMenu)}
                   >
-                    👤 {user.displayName || 'User'} ▾
+                    👤 <span className="d-none d-md-inline">{user.displayName || 'User'} ▾</span>
                   </button>
                   {showUserMenu && (
                     <div className="user-dropdown">
@@ -183,18 +183,19 @@ export default function Navbar({ showHome = false }) {
                 </div>
               ) : (
                 <a
-                  className="nav-link"
+                  className="nav-link d-flex align-items-center"
                   style={{ textDecoration: 'none', cursor: 'pointer' }}
                   onClick={() => setShowLoginModal(true)}
                 >
-                  {t('login')}
+                  <span className="d-none d-md-inline">{t('login')}</span>
+                  <span className="d-inline d-md-none" style={{ fontSize: '1.2rem' }} title={t('login')}>👤</span>
                 </a>
               )}
 
               {/* Cart */}
-              <Link href="/cart" className="btn btn-light d-flex align-items-center gap-2 rounded-pill" style={{ textDecoration: 'none' }}>
-                🛒 <span>{t('cart')}</span>
-                {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+              <Link href="/cart" className="btn btn-light d-flex align-items-center gap-1 rounded-pill" style={{ textDecoration: 'none', padding: '6px 12px' }}>
+                🛒 <span className="d-none d-md-inline">{t('cart')}</span>
+                {cartCount > 0 && <span className="cart-badge" style={{ marginLeft: '2px' }}>{cartCount}</span>}
               </Link>
             </div>
 
