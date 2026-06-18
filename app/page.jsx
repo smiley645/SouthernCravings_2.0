@@ -59,7 +59,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* Soulful Flavors Section - EXACT same as original */}
-      <div className="container py-5 mt-5">
+      <div className="container py-5 mt-5 states-section-card">
         <h2 className="text-center fw-semibold mb-5 display-6">
           {lang === 'ja' ? '南インドの本場の味' : 'Soulful flavors of authentic Southern States'}
         </h2>

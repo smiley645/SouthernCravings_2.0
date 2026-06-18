@@ -51,8 +51,16 @@
   border-radius: 12px; /* Example custom style */
 }
 
-.container.py-5.mt-5 {
+.states-section-card {
   background-color: #d1ebcd;
+  transition: all 0.3s ease;
+}
+
+.footer-section-card {
+  width: 100%;
+  background-color: #d1ebcd;
+  margin-top: 35px;
+  transition: all 0.3s ease;
 }
 
 .main_container {
@@ -1092,6 +1100,25 @@
     bottom: 80px;
     width: calc(100vw - 16px);
     height: calc(100vh - 120px);
+  }
+
+  .states-section-card {
+    border-radius: 20px !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    width: calc(100% - 24px) !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .footer-section-card {
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    width: calc(100% - 24px) !important;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
   }
 }
 

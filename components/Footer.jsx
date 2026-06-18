@@ -4,7 +4,7 @@ export default function Footer() {
   const { t, lang } = useLanguage();
 
   return (
-    <footer style={{ width: '100%', backgroundColor: '#d1ebcd', marginTop: '35px' }}>
+    <footer className="footer-section-card">
       <div className="container py-4">
         <div className="row">
           {/* Footer Header */}
