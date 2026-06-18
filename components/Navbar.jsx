@@ -97,7 +97,7 @@ export default function Navbar({ showHome = false }) {
     <>
       <nav className="navbar">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between w-100 flex-nowrap gap-3">
+          <div className="navbar-container-custom">
 
             {/* Logo */}
             <Link href="/" className="navbar-brand fw-bold mb-0" id="logo" style={{ color: '#ffc107', textDecoration: 'none' }}>
@@ -150,7 +150,7 @@ export default function Navbar({ showHome = false }) {
             </form>
 
             {/* Navigation Items */}
-            <div className="d-flex align-items-center gap-3 flex-shrink-0">
+            <div className="d-flex align-items-center gap-3 flex-shrink-0 navbar-nav-items">
               {showHome && (
                 <Link href="/" style={{ textDecoration: 'none', color: 'white' }}>{t('home')}</Link>
               )}
